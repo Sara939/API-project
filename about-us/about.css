@@ -9,7 +9,10 @@
     padding:2px;
     height: 100%;
 }
-
+body{
+    margin-bottom: 10vh;
+    margin-top: 7vh;
+}
 
 #header{
     grid-area: header;
@@ -21,9 +24,10 @@ img{
 
 #main{
     grid-area: main;
+    padding: 7%;
 
 }
-#footer{
+.footer{
    grid-area: footer;
 }
 .text-center{
@@ -31,14 +35,32 @@ img{
     font-size: small;
 }
 
+#article_id{
+    display: flex;
+    flex-direction: row;
+}
 
+#article_id > div{
+    padding: 5%;
+    width: 50vw;
+}
+#about_img{
+    height: 70vh;
+    width: 50vw;
+
+}
 
 @media (max-width: 992px){
     img{
         display: none;
     }
-    
-}
-h1{
-  margin-top: 120px  
+    #article_id{
+        display: block;
+    }
+    #about_img{
+        display: block;
+        width: 30vh;
+        height: 20vh;
+    }
+
 }

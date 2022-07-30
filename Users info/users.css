@@ -10,23 +10,25 @@
     height: 100%;
 }
 
+body{
+    margin-bottom: 10vh;
+    margin-top: 7vh;
+}
 
 #header{
     grid-area: header;
 }
-/* img{
+img{
     height:17vh;
     width: 9vw;
-} */
+}
 
 #main{
     grid-area: main;
-    background-image: url(/imges/IABs-Location-Playbook.jpg);
-    align-content: center;
-    color: aliceblue;
-    font-family: serif;
-
-    
+    padding: 7%;
+    /* background-image: url(/imges/Connected-Intelligence-users.jpg);
+    background-position: center;
+    background-size: cover; */
 
 }
 #footer{
@@ -37,14 +39,23 @@
     font-size: small;
 }
 
+th, tr, td{
+    border: 2px solid black;
+    font-size: 20px;
+    /* font-weight: bolder; */
+}
+/* th{
+    color: white;
+    
+} */
 
+#users_table{
+    text-align: center;
+}
 
 @media (max-width: 992px){
     img{
         display: none;
     }
-    
-}
-h1{
-  margin-top: 120px  
+
 }
