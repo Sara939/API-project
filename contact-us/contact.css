@@ -1,0 +1,53 @@
+#grid-container {
+    display: grid;
+    grid-template-areas:
+        'header header header header header'
+        ' main main main main main'
+        ' main main main main main'
+        'main main main main main'
+        'footer footer footer footer footer';
+    padding:2px;
+    height: 100%;
+}
+
+body{
+    margin-bottom: 10vh;
+    margin-top: 7vh;
+
+}
+
+#header{
+    grid-area: header;
+}
+/* img{
+    height:17vh;
+    width: 9vw;
+} */
+
+#main{
+    grid-area: main;
+    padding: 5%;
+
+}
+
+.footer{
+   grid-area: footer;
+
+}
+.text-center{
+    color:rgb(105, 105, 105) ;
+    font-size: small;
+}
+
+#form-id{
+    justify-content: center;
+}
+
+
+
+@media (max-width: 992px){
+    img{
+        display: none;
+    }
+
+}

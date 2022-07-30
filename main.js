@@ -10,10 +10,17 @@ catch(err){
 }
 }
 
+// setInterval(() => {
+//     catchiquote().then((response)=>{
+//         document.getElementById("main").innerHTML+= `<h1>" ${response.quote} "</h1> `
+//         document.getElementById("main").innerHTML+= `<h3> - ${response.author} - </h3> `
+//     });
+// }, 1000 * 60 * 60);
+
 onload= function printquote(){
     catchiquote().then((response)=>{
-        for (const key in response) {
-            document.getElementById("main").innerHTML+= `<h1>${response[key]}</h1> `
-        }  
+        document.getElementById("main").innerHTML+= `<h1>" ${response.quote} "</h1> `
+        document.getElementById("main").innerHTML+= `<h3> - ${response.author} - </h3> `
     });
 }
+
