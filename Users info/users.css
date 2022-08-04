@@ -25,10 +25,8 @@ img{
 
 #main{
     grid-area: main;
-    padding: 7%;
-    /* background-image: url(/imges/Connected-Intelligence-users.jpg);
-    background-position: center;
-    background-size: cover; */
+    /* padding: 7%; */
+    font-family: 'Lora', serif;
 
 }
 #footer{
@@ -38,20 +36,53 @@ img{
     color:rgb(105, 105, 105) ;
     font-size: small;
 }
-
+/* 
 th, tr, td{
     border: 2px solid black;
     font-size: 20px;
-    /* font-weight: bolder; */
+
 }
-/* th{
-    color: white;
-    
-} */
 
 #users_table{
     text-align: center;
-}
+} */
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgb(251, 242, 133);
+    background: radial-gradient(
+      circle,
+      rgba(251, 242, 133, 0.6334908963585435) 0%,
+      rgba(224, 196, 91, 0.8407738095238095) 35%,
+      rgba(230, 224, 113, 1) 100%
+    );
+  }
+  .weather {
+    display: flex; 
+    align-items: center;
+    margin: 15px 0;
+    font-size: 1.5rem;
+  }
+  #location {
+    font-size: 3rem;
+    font-weight: 800;
+    font-style: italic;
+  }
+  .desc {
+    font-size: 1.25rem;
+    text-transform: capitalize;
+  }
+  .circle {
+    background-color: black;
+    border-radius: 50px;
+    height: 15px;
+    width: 15px;
+    margin: 0 15px;
+  }
 
 @media (max-width: 992px){
     img{

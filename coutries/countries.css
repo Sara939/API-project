@@ -29,6 +29,10 @@
     font-size: small;
 }
 
+input{
+    width: 50%
+}
+
 @media (max-width: 992px){
     img{
         display: none;

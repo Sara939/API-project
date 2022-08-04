@@ -11,6 +11,7 @@ button.addEventListener("click", function() {
     let lat = position.coords.latitude; 
     let long = position.coords.longitude;
     marker = L.marker([lat,long]).addTo(mymap); 
+    document.getElementById("main").innerHTML+= `Found you!  <span>Your latitude is: ${lat}, your longitude is: ${long}</span>`
 
   });
 });
